@@ -52,10 +52,10 @@ def fig_TS_plane():
     # ordered by cooperation level (HG high -> PD low) so the schematic
     # matches the empirical heatmap.
     _vir = plt.cm.viridis
-    ax.add_patch(plt.Rectangle((5, 5), 5, 5, fc=_vir(0.85), ec="black", alpha=0.6))
-    ax.add_patch(plt.Rectangle((10, 5), 5, 5, fc=_vir(0.55), ec="black", alpha=0.6))
-    ax.add_patch(plt.Rectangle((5, 0), 5, 5, fc=_vir(0.35), ec="black", alpha=0.6))
-    ax.add_patch(plt.Rectangle((10, 0), 5, 5, fc=_vir(0.12), ec="black", alpha=0.6))
+    ax.add_patch(plt.Rectangle((5, 5), 5, 5, fc=_vir(0.85), ec="black"))
+    ax.add_patch(plt.Rectangle((10, 5), 5, 5, fc=_vir(0.55), ec="black"))
+    ax.add_patch(plt.Rectangle((5, 0), 5, 5, fc=_vir(0.35), ec="black"))
+    ax.add_patch(plt.Rectangle((10, 0), 5, 5, fc=_vir(0.12), ec="black"))
     ax.text(7.5, 7.5, "HG\nHarmony", ha="center", va="center", fontsize=12, weight="bold")
     ax.text(12.5, 7.5, "SG\nSnowdrift", ha="center", va="center", fontsize=12, weight="bold")
     ax.text(7.5, 2.5, "SH\nStag Hunt", ha="center", va="center", fontsize=12, weight="bold")
